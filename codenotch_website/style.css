@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header para todos */
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    color: white;
+    gap: 200px;
+}
+
+.menu {
+    /* border: 1px solid blue;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 100px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 20px 20px 20px
+}
+
+.menu__enlaces {
+    /* border: 1px solid green;  */
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    font-size: large;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__enlaces:hover {
+    border-bottom: 2px solid rgb(0, 0, 168);
+}
+
+/* HOME */
+
+.cuerpo_home {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-top: 70px;
+    min-height: 80vh;
+    width: 100vw;
+
+}
+
+.cuerpo_home span {
+    color: turquoise
+}
+
+.imagen_home {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+
+}
+
+.text_home {
+
+    color: rgb(244, 244, 244);
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+}
+
+.cuerpo3_home{
+    background-color: rgb( 25, 26, 28);
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:80px;
+
+}
+.cuerpo3__home{
+   
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:80px;
+}
+
+.cuerpotexto{
+    color: rgb(244, 244, 244);
+    font-family: 'Poppins', sans-serif;
+    margin-right: 100px;
+}
+
+.cuerpotexto2{
+    color: rgb(244, 244, 244);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 100px;
+}
+
+.cuerpotextotitulo{
+    color: rgb(244, 244, 244);
+    font-family: 'Poppins', sans-serif;
+    width:45%;
+    margin-left: 60px;
+    
+}
+
+.cuerpotextotitulo h1{
+    margin-bottom: 30px;
+}
+.cuerpotextotitulo h2{
+    margin-bottom: 20px;
+}
+
+
+.cuerpoimagen{
+    height: 300px;
+    width: 500px;
+    margin:50px 100px 50px 100px;
+
+}
+
+.cuerpo2_home{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    max-height: fit-content;
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+    gap:50px;
+    margin-top: 40px;
+}
+
+.loguito{
+    height: 350px;
+    margin-left: 60px;
+}
+
+
+/* CONTACTO */
+
+.cuerpo_contacto {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+}
+
+.cuerpo_contacto h2{
+    color: rgb(244, 244, 244)
+}
+
+.formulario {
+
+    background-color: rgb(244, 244, 244);
+    color: black;
+    width: 350px;
+    height: 200px;
+    font-size: large;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 9px;
+}
+
+.cuerpo2_contacto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb( 25, 26, 28); */
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.cuerpo2_contacto span {
+    color:turquoise
+}
+
+/* CURSOS */
+.cuerpo_cursos{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(244, 244, 244);
+    padding: 30px 30px 30px 30px;
+    font-family: 'Poppins', sans-serif;
+    gap:30px;
+    /* border: 1px solid red; */
+
+}
+
+.tipos_cursos h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tipos_cursos h3{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.p_detalles{
+    text-align: justify;
+    letter-spacing: 1px;
+
+}
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    gap:50px;
+}
+
+.fotocurso{
+    margin-bottom: 40px;
+    padding-left: 30px;
+
+}
+
+/* EQUIPO */
+
+.equipo_cuerpo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+
+}
+
+.profesores{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    padding: 50px 100px 50px 50px;
+    margin-right: 200px;
+    margin-left: 150px;
+}
+
+
+.inprofesores{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+
+.inprofesores p {
+    text-align: justify;
+}
+
+.fotoprofe{
+    width:250px;
+    height: 320px;
+}
+
+
+
+
+
+/* FOOTER PARA TODOS */
+.footer {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    padding-top: 60px;
+
+}
