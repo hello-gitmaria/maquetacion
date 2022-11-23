@@ -32,7 +32,55 @@ function pedirInfo() {
     console.log(arrayViajes);
 }
 
-function filtrar() {
+// function filtrar() {
+//     let arrayFiltrado=[];
+//     for(let i=0;i<arrayViajes.length;i++){
+//         if(arrayViajes[i].destino_viaje.toUpperCase() == `CANARIAS` || arrayViajes[i].destino_viaje.toUpperCase() == `MALLORCA` || arrayViajes[i].destino_viaje.toUpperCase() == `GALICIA` ){
+//             arrayFiltrado.push(arrayViajes[i]);
+//         }
+//     }
+// console.log(arrayFiltrado);
+// }
 
-    
+function filtrar() {
+    let tabla = document.getElementById("viajes_filtro");
+
+    tabla.innerHTML =
+        ` <tr class="tabla_filtrada_tittle">
+          <th>Nombre</th>
+          <th>Origen</th>
+          <th>Destino</th>
+          <th>Viajeros</th>
+          <th>Fecha</th>
+          </tr>`
+
+    for (let i = 0; i < arrayViajes.length; i++) {
+        if (arrayViajes[i].destino_viaje.toUpperCase() == `CANARIAS` || arrayViajes[i].destino_viaje.toUpperCase() == `MALLORCA` || arrayViajes[i].destino_viaje.toUpperCase() == `GALICIA`) {
+            tabla.innerHTML +=
+                `<tr class= "tabla_filtrada_inside">
+            <th>
+                ${arrayViajes[i].nombre_viaje}
+            </th>
+            <th>
+                ${arrayViajes[i].origen_viaje}
+            </th>
+            <th>
+                ${arrayViajes[i].destino_viaje}
+            </th>
+            <th>
+                ${arrayViajes[i].viajeros_viaje}
+            </th>
+            <th>
+                ${arrayViajes[i].fecha_viaje}
+            </th>
+        </tr>
+        `
+        }
+    }
+
+
+
+
+
+
 }
