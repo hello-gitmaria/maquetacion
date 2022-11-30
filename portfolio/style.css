@@ -1,0 +1,50 @@
+:root{
+    --primaryColor:#887643;
+    --secondColor:violet;
+    --mainFontColor:white;
+    --selectFontColor:rgb(239, 6, 134);
+
+    --primaryFont:'Roboto Mono', monospace;
+    
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primaryColor);
+}
+
+.header{
+    /* border-color: px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.header_title{
+    color: var(--mainFontColor);
+    font-family: var(--primaryFont);
+}
+
+.header_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:6px;
+
+}
+
+.header_menu_link{
+    color: var(--mainFontColor);
+    font-family: var(--primaryFont);
+}
+.header_menu_link::hover{
+    color:var(--selectFontColor)
+
+}
