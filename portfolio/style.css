@@ -1,8 +1,10 @@
 :root{
     --primaryColor:#887643;
-    --secondColor:violet;
+
     --mainFontColor:white;
-    --selectFontColor:rgb(239, 6, 134);
+    --secondFontColor:rgb(2, 0, 27);
+    --selectFontColor:yellow;
+    --selectFontColor2:turquoise;
 
     --primaryFont:'Roboto Mono', monospace;
     
@@ -22,6 +24,7 @@ body{
     /* border-color: px red; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     margin-top: 5vh;
@@ -36,15 +39,50 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:6px;
+    gap:8px;
 
 }
 
-.header_menu_link{
+.header_menu_link,.header_menu_link_hola{
     color: var(--mainFontColor);
     font-family: var(--primaryFont);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding:3px 3px 3px 3px;
+
 }
-.header_menu_link::hover{
-    color:var(--selectFontColor)
+
+.header_menu_link:hover{
+    color:var(--selectFontColor);
+    transform:scale(0.95);
+    
+}
+
+.header_menu_link_hola:hover{
+    color:var(--selectFontColor2);
+    transform:scale(0.95);
+    
+}
+
+/* HOME */
+
+.main_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vw;
+    width: 100vw;
+
+}
+
+.main_home_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--mainFontColor);
+    font-family: var(--primaryFont);
+
 
 }
