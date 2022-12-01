@@ -1,30 +1,34 @@
-:root{
-    --primaryColor:#887643;
+:root {
+    --primaryColor: #887643;
 
-    --mainFontColor:white;
-    --secondFontColor:rgb(2, 0, 27);
-    --selectFontColor:yellow;
-    --selectFontColor2:turquoise;
+    --mainFontColor: white;
+    --secondFontColor: rgb(2, 0, 27);
+    --selectFontColor: yellow;
+    --selectFontColor2: turquoise;
 
-    --primaryFont:'Roboto Mono', monospace;
-    
+    --primaryFont: 'Roboto Mono', monospace;
+
 }
 
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: var(--primaryFont);
 }
 
-body{
+body {
     background-color: var(--primaryColor);
+}
+
+.big_gap{
+    height: 30vh;
 }
 
 /* HEADER */
 
-.header{
-   
+.header {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,43 +38,45 @@ body{
     padding-top: 5vh;
     padding-bottom: 3vh;
     background-color: var(--primaryColor);
-    position:fixed;
-    top:0px;
+    position: fixed;
+    top: 0px;
     z-index: 11;
 }
 
-.header_title{
+.header_title {
     color: var(--mainFontColor);
     font-family: var(--primaryFont);
     text-decoration: none;
 }
 
-.header_menu{
+.header_menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:8px;
+    gap: 8px;
 
 }
 
-.header_menu_link{
+.header_menu_link {
     color: var(--mainFontColor);
     font-family: var(--primaryFont);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    padding:3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
 
 }
 
-.header_menu_link:hover, .header_title:hover, .main_home_text a:hover {
-    color:var(--selectFontColor);
-    transform:scale(0.98);
-    
+.header_menu_link:hover,
+.header_title:hover,
+.main_home_text a:hover {
+    color: var(--selectFontColor);
+    transform: scale(0.98);
+
 }
 
 /* HOME */
 
-.main_home{
+.main_home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +86,7 @@ body{
 
 }
 
-.main_home_text{
+.main_home_text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -89,55 +95,124 @@ body{
     font-family: var(--primaryFont);
 }
 
-.main_home_text a{
+.main_home_text a {
     text-decoration: none;
     border-bottom: 2px solid transparent;
     color: var(--mainFontColor)
-   
 }
 
 .main_home_text a:hover {
-    color:var(--selectFontColor);
-    transform:scale(0.98);
-    
+    color: var(--selectFontColor);
+    transform: scale(0.98);
+
 }
 
 /* aboutme */
 
-.main_aboutme{
+.main_aboutme {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:50px;
+    gap: 50px;
     margin-top: 120px;
-    padding:40px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
 
 }
 
-.main_aboutme_textos{
+/* .main_aboutme_textos {} */
 
+.main_aboutme_perfil1 {
+    position: relative;
 }
 
-
-
-
-
-.main_aboutme_perfil1{
-    position:relative;
-}
-
-.main_aboutme_perfil1 .main_aboutme_perfil2{
-    position: absolute;  
-    top: 0;  
+.main_aboutme_perfil1 .main_aboutme_perfil2 {
+    position: absolute;
+    top: 0;
     left: 0;
     opacity: 0;
     transition: .5s;
-    
+
 }
+
 .main_aboutme_perfil1:hover .main_aboutme_perfil2 {
     opacity: 1;
-  } 
+}
 
+/* formulario */
 
+.main_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 30vh;
+}
+
+.main_contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40vw;
+    gap: 10px;
+    /* border: 1px solid red; */
+
+}
+
+.main_contact_form label {
+    font-weight: bold;
+    font-size: smaller;
+    color: var(--mainFontColor)
+}
+
+.main_contact_form ::placeholder {
+    font-weight: bold;
+    font-style: italic;
+    font-size: x-small;
+    color: var(--primaryColor)
+}
+
+.main_contact_form input {
+    width: 80vh;
+    height: 4.5vh;
+    border: none;
+}
+
+.main_contact_form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: none;
+    gap: 2px
+}
+
+.main_contact_form textarea{
+    resize: none;
+    width: 80vh;
+    height: 30vh;
+}
+
+.form_botones {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.boton {
+    width: 60px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    background-color: var(--primaryColor);
+    color: black;
+    font-weight: bold;
+}
+
+.boton:hover {
+    color: var(--selectFontColor)
+}
