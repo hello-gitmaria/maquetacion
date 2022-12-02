@@ -1,0 +1,27 @@
+:root {
+    --primaryFont: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--primaryFont);
+}
+
+.contenedorPadre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.contenedorhijo1{
+    background-color: brown;
+}
+
+.contenedorhijo2{
+    background-color: yellow;
+}
