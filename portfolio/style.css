@@ -139,6 +139,11 @@ body {
     opacity: 1;
 }
 
+.main_aboutme_perfil img{
+    width: 200px;
+}
+
+
 /* formulario */
 
 .main_contact {
