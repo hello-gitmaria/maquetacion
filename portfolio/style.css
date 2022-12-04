@@ -107,20 +107,46 @@ body {
 
 }
 
-/* aboutme */
+/* ABOUT ME */
 
 .main_aboutme {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 50px;
     margin-top: 120px;
     padding: 40px 40px 40px 40px;
+    width:100%;
 
 }
 
-/* .main_aboutme_textos {} */
+
+/* ABOUT ME ---TEXTO */
+
+
+.main_aboutme_textos {
+    color:var(--mainFontColor);
+    font-size: small;
+    width:350px;
+    margin-left: 100px;
+}
+
+.descripcion a{
+    text-decoration: none;
+    color:rgb(250, 243, 203);
+    font-weight: 500;
+}
+
+.descripcion a:hover{
+    color:var(--selectFontColor);
+    font-weight: 500;
+}
+
+
+/* ABOUT ME --IMAGEN */
+
+
 
 .main_aboutme_perfil1 {
     position: relative;
@@ -141,10 +167,11 @@ body {
 
 .main_aboutme_perfil img{
     width: 200px;
+    margin-right: 100px;
+    margin-top:30px;
 }
 
-
-/* formulario */
+/* CONTACT0*/
 
 .main_contact {
     display: flex;
@@ -167,15 +194,16 @@ body {
 }
 
 .main_contact_form label {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: smaller;
-    color: var(--mainFontColor)
+    color: var(--mainFontColor);
+    margin-bottom: 5px;
 }
 
 .main_contact_form ::placeholder {
     font-weight: bold;
     font-style: italic;
-    font-size: x-small;
+    font-size: small;
     color: var(--primaryColor)
 }
 
@@ -221,3 +249,18 @@ body {
 .boton:hover {
     color: var(--selectFontColor)
 }
+
+
+/* TECNOLOGIAS */
+.tecnologias{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.t_title{
+    color:var(--mainFontColor);
+}
+
+/* PROYECTOS */
