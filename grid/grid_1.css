@@ -1,0 +1,49 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color:white;
+}
+
+/* -------------------- */
+/* 
+ .gridContainer{
+    display:grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr;
+
+    width:100%;
+}  */
+
+ .gridContainer{
+    display:grid;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr  [x4] ;
+    grid-template-rows: [y0]1fr [y1]2fr [y2]1fr [y3]1fr [y4];
+
+    width:100%;
+ }
+
+.a{
+    background-color: yellowgreen;
+}
+
+.b{
+    background-color: orange;
+}
+
+.c{
+    background-color:orangered;
+}
+
+.d{
+    background-color:red;
+}
+
+.e{
+    background-color:blue;
+}
+.f{
+    background-color:yellow;
+}
