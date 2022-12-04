@@ -134,7 +134,7 @@ body {
 
 .descripcion a{
     text-decoration: none;
-    color:rgb(250, 243, 203);
+    color:rgb(248, 238, 177);
     font-weight: 500;
 }
 
@@ -204,7 +204,8 @@ body {
     font-weight: bold;
     font-style: italic;
     font-size: small;
-    color: var(--primaryColor)
+    color: var(--primaryColor);
+    padding:10px 10px 10px 10px;
 }
 
 .main_contact_form input {
@@ -247,7 +248,8 @@ body {
 }
 
 .boton:hover {
-    color: var(--selectFontColor)
+    color: var(--selectFontColor);
+    
 }
 
 
@@ -257,10 +259,48 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    margin-top: 30vh;
+    margin-left: 50vh;
+    color:var(--mainFontColor);
+    gap:25px;
+    
 }
+
 
 .t_title{
     color:var(--mainFontColor);
+    margin-bottom: 10px;
+}
+
+.icons{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    gap:30px;
+    margin-left:20px;
+}
+.icon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 60px;
+
+}
+.icon i{
+    font-size: 40px;
+}
+
+.icon:hover{
+    border-bottom:3px solid var(--selectFontColor);
+    
+}
+.icon p{
+    font-size: 10px;
 }
 
 /* PROYECTOS */
