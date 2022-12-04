@@ -5,3 +5,52 @@
 }
 
 /* -------------------- */
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 400px;
+    gap:0px;
+    height: 100vh;
+
+
+}
+.gridContainer1, .gridContainer2 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 200px 200px;
+
+}
+
+.a{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+.c{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+.e{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+
+.b{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.d{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.f{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
