@@ -8,9 +8,9 @@
 
 .gridContainer{
     display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 400px;
-    gap:0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
     height: 100vh;
 
 
@@ -18,8 +18,10 @@
 .gridContainer1, .gridContainer2 {
     height: 100vh;
     display: grid;
-    grid-template-columns: 100px 200px 100px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    width:50vw;
+    border: 1px solid red;
 
 }
 
