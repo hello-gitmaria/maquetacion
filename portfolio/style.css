@@ -4,7 +4,7 @@
     --mainFontColor: white;
     --secondFontColor: rgb(2, 0, 27);
     --selectFontColor: yellow;
-    --selectFontColor2: turquoise;
+    --selectFontColor2:rgb(251, 246, 212);
 
     --primaryFont: 'Roboto Mono', monospace;
 
@@ -23,6 +23,7 @@ body {
 
 .big_gap{
     height: 30vh;
+    border:2px solid blue;
 }
 
 /* HEADER */
@@ -59,7 +60,7 @@ body {
 
 .header_menu_link {
     color: var(--mainFontColor);
-    font-family: var(--primaryFont);
+    font-family: var(--selectFontColor2);
     text-decoration: none;
     border-bottom: 2px solid transparent;
     padding: 3px 3px 3px 3px;
@@ -70,7 +71,8 @@ body {
 .header_title:hover,
 .main_home_text a:hover {
     color: var(--selectFontColor);
-    transform: scale(0.98);
+    transform: scale(0.99);
+    transition: .5s;
 
 }
 
@@ -103,7 +105,8 @@ body {
 
 .main_home_text a:hover {
     color: var(--selectFontColor);
-    transform: scale(0.98);
+    transform: scale(0.99);
+    transition: .5s;
 
 }
 
@@ -134,13 +137,15 @@ body {
 
 .descripcion a{
     text-decoration: none;
-    color:rgb(248, 238, 177);
+    color:var(--selectFontColor2);
     font-weight: 500;
 }
 
 .descripcion a:hover{
     color:var(--selectFontColor);
     font-weight: 500;
+    transition: .5s;
+    transform: scale(0.99);
 }
 
 
@@ -169,6 +174,7 @@ body {
     width: 200px;
     margin-right: 100px;
     margin-top:30px;
+    border-radius: 1.5px;
 }
 
 /* CONTACT0*/
@@ -178,6 +184,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-left:-80px; */
+    /* border:2px solid red; */
 
     margin-top: 30vh;
 }
@@ -187,7 +195,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 40vw;
     gap: 10px;
     /* border: 1px solid red; */
 
@@ -209,8 +216,8 @@ body {
 }
 
 .main_contact_form input {
-    width: 80vh;
-    height: 4.5vh;
+    width: 400px;
+    height: 25px;
     border: none;
 }
 
@@ -225,8 +232,8 @@ body {
 
 .main_contact_form textarea{
     resize: none;
-    width: 80vh;
-    height: 30vh;
+    width: 400px;
+    height: 100px;
 }
 
 .form_botones {
@@ -249,6 +256,8 @@ body {
 
 .boton:hover {
     color: var(--selectFontColor);
+    transition: .5s;
+    transform: scale(0.99);
     
 }
 
@@ -289,6 +298,7 @@ body {
     align-items: center;
     width: 50px;
     height: 60px;
+    color: var(--selectFontColor2)
 
 }
 .icon i{
@@ -297,6 +307,8 @@ body {
 
 .icon:hover{
     border-bottom:3px solid var(--selectFontColor);
+    transition: .3s;
+    transform: scale(0.99);
     
 }
 .icon p{
@@ -304,3 +316,96 @@ body {
 }
 
 /* PROYECTOS */
+
+.main_proyectos{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 30vh;
+    margin-left: 25vh;
+    color:var(--mainFontColor);
+    gap:25px;
+    margin-bottom: 50px;
+}
+
+.proyectos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+
+.proyecto{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    color:var(--selectFontColor2);
+    font-weight: lighter;
+}
+
+
+.proyecto_perfil1 {
+    position: relative;
+}
+
+.proyecto_perfil1 .proyecto_perfil2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.proyecto_perfil1:hover .proyecto_perfil2 {
+    opacity: 1;
+}
+
+
+.proyecto img{
+    width: 200px;
+    border-radius: 1.5px;
+}
+
+.proyecto:hover{
+    color:var(--selectFontColor);
+    transition: .5s;
+    transform: scale(0.99);
+}
+
+/* FOOTER */
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+    padding-bottom: 40px;
+    /* border:2px solid red; */
+    width:100%;
+}
+
+
+
+.visita a{
+    text-decoration: none;
+    color: var(--selectFontColor2);
+}
+
+
+.visita a:hover {
+    color: var(--selectFontColor);
+    transition: .5s;
+    
+}
+.visita{
+    margin-top: 20vh;
+    color:var(--mainFontColor);
+    font-size:15px;
+}
