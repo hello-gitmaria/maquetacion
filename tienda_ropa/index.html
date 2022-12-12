@@ -47,17 +47,50 @@
                     </li>
                 </ul>
 
-                <!-- <form class="d-flex" role="search">
+                <!-- 
+                    ESTE ES EL BOTON QUE HABIA ANTES
+                    <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <button class="btn btn-light my-2 mx-4" type="submit">CARRITO</button>
-                <!-- </form> -->
+                <!-- <button id="boton_carrito" class="btn btn-light my-2 mx-4" type="submit">CARRITO</button>
+                </form> -->
+
+                <!-- modal -->
+                <!-- Button trigger modal -->
+                <button type="button" id="boton_carrito" class="btn btn-light my-2 mx-4"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    CARRITO
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Tu carrito:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div id="cuerpo_carrito" class="modal-body">
+                                <!-- items comprados -->
+                            </div>
+                            
+                            <div class="modal-footer">
+                                <div id="suma_carrito" class="modal-body" style="color:red">
+                                    <!-- suma items -->
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" onclick="sumar()"class="btn btn-primary">Sumar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </nav>
 
     <!-- cuerpo con cards -->
-    <div class="container mt-5 ">
+    <div class="container mt-5 mb-5 ">
 
         <!-- primera fila -->
         <div class="row mb-4">
@@ -69,7 +102,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">59 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Pantalon Françoise`, 59)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -80,7 +113,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">39 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Blazer Oversize`, 39)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -91,18 +124,18 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">29 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Vestido Drapeado`, 29)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card mx-3" style="width: 15rem;">
-                <img src="/tienda_ropa/imagenes_tienda/tienda4.jpg"class="card-img-top" alt="tienda4">
+                <img src="/tienda_ropa/imagenes_tienda/tienda4.jpg" class="card-img-top" alt="tienda4">
                 <div class="card-body">
                     <h5 class="card-title">Shorts Lentejuela</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">29 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Shorts Lentejuela`, 29)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
         </div>
@@ -118,29 +151,29 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">29 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Botín Tacón`, 29)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card mx-3" style="width: 15rem;">
-                <img src="/tienda_ropa/imagenes_tienda/tienda6.jpg"  class="card-img-top" alt="tienda6">
+                <img src="/tienda_ropa/imagenes_tienda/tienda6.jpg" class="card-img-top" alt="tienda6">
                 <div class="card-body">
                     <h5 class="card-title">Vestido Corto</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">35 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Vestido Corto`, 35)"  href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
             <div class="card mx-3" style="width: 15rem;">
-                <img src="/tienda_ropa/imagenes_tienda/tienda7.jpg"  class="card-img-top" alt="tienda7">
+                <img src="/tienda_ropa/imagenes_tienda/tienda7.jpg" class="card-img-top" alt="tienda7">
                 <div class="card-body">
                     <h5 class="card-title">Vestido Midi</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">38 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Vestido Midi`, 38)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -151,7 +184,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="card-text">45 €</p>
-                    <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                    <a onclick="recibirDatos(`Vaqueros Cowboy`, 45)" href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
         </div>
@@ -165,6 +198,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+
+    <!-- Likeado libreria jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- justo despues, no antes, linkeado con nuestro archivo .js donde escribiremos jquery -->
+    <script src="main.js"></script>
+
 
 </body>
 
