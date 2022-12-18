@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -------------------- */
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+.gridContainer1, .gridContainer2 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    width:50vw;
+    border: 1px solid red;
+
+}
+
+.a{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+.c{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+.e{
+    background-color: greenyellow;
+    color:black;
+    text-align: center;
+}
+
+.b{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.d{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.f{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
